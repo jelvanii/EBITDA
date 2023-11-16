@@ -8,11 +8,11 @@ from email.mime.text import MIMEText
 def sendEmails(subject, body, to_email):
     """Send emails"""
     # email server
-    from_email = ''
+    from_email = 'seanjelvani@hotmail.com'
     smtp_server = 'smtp.office365.com'
     smtp_port = 587
     smtp_username = from_email
-    smtp_password = ''
+    smtp_password = 'BV%h3@GHDgk6M@Nh3p'
     # data email setup
     to_addr = to_email
     data_msg = f"From: {from_email}\r\nTo: {to_addr}\r\nSubject: {subject}\r\n\r\n{body}"
@@ -98,7 +98,7 @@ def lambda_handler(event, context):
         }
 
     # Send emails
-    sendEmails(subject, body, email)
+    sendEmails(subject, body, 'seanjelvani@gmail.com')
 
     # Return a success message
     return {
